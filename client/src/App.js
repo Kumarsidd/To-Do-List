@@ -1,14 +1,18 @@
-import React from "react";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ShowToDo from "./components/ShowToDo";
+import CreateToDo from "./components/CreateToDo";
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Header />
-      <Main />
-    </>
+    <div className="app-contents">
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<ShowToDo />} />
+          <Route path="/create-todo" element={<CreateToDo />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
-};
+}
 
 export default App;

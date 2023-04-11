@@ -1,8 +1,11 @@
 const router = require("express").Router();
 
 const {
-    getAllTodo, postCreateToDo, updateToDo, deletedToDo
-} = require("../controller/toDoController.js")
+  getAllTodo,
+  postCreateToDo,
+  updateToDo,
+  deletedToDo,
+} = require("../controller/toDoController.js");
 
 router.get("/", getAllTodo);
 
