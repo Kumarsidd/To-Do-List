@@ -2,11 +2,11 @@
 
 ## Available Scripts
 
-In the project directory, you can run:
+#### In the project directory, you can run:
 
 ### `npm install`
 
-## to install all the dependecy and then Launches the test runner in the interactive watch mode.
+## to install all the dependecy and then Launch the server by -
 
 ### `nodemon start`
 
